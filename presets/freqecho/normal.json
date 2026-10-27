@@ -1,0 +1,16 @@
+{
+  "effect": "freqecho",
+  "title": "Valhalla Freq Echo",
+  "name": "Valhalla Freq Echo - Normal",
+  "settings": {
+    "Mix": 50.0,
+    "Delay": 200.0,
+    "Feedback": 50.0,
+    "Shift": 10.0,
+    "LowShift": "Off",
+    "Width": 0.0,
+    "LowCut": 40.0,
+    "HighCut": 12000.0,
+    "Mode": "Normal"
+  }
+}

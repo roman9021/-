@@ -1,0 +1,23 @@
+{
+  "effect": "delay",
+  "title": "ValhallaDelay",
+  "name": "ValhallaDelay - HiFi",
+  "settings": {
+    "Mix": 30.0,
+    "DelayL": 375.0,
+    "DelayR": 375.0,
+    "Feedback": 40.0,
+    "Width": 100.0,
+    "Age": 25.0,
+    "Drive": 0.0,
+    "Diffusion": 0.0,
+    "Ducking": 0.0,
+    "ModRate": 0.5,
+    "ModDepth": 20.0,
+    "LowCut": 80.0,
+    "HighCut": 8000.0,
+    "Pitch": 12.0,
+    "Mode": "HiFi",
+    "Style": "Single"
+  }
+}

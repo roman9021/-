@@ -1,0 +1,14 @@
+{
+  "effect": "spacemod",
+  "title": "Valhalla Space Modulator",
+  "name": "Valhalla Space Modulator - Flange",
+  "settings": {
+    "Mix": 50.0,
+    "Rate": 0.25,
+    "Depth": 50.0,
+    "Feedback": 50.0,
+    "Manual": 0.5,
+    "Width": 50.0,
+    "Mode": "Flange"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "effect": "vintageverb",
+  "title": "ValhallaVintageVerb",
+  "name": "ValhallaVintageVerb - Chamber1979",
+  "settings": {
+    "Mix": 50.0,
+    "PreDelay": 0.0,
+    "Decay": 2.0,
+    "Size": 50.0,
+    "Attack": 50.0,
+    "EarlyDiffusion": 70.0,
+    "LateDiffusion": 70.0,
+    "ModRate": 0.5,
+    "ModDepth": 50.0,
+    "HighCut": 8000.0,
+    "LowCut": 10.0,
+    "BassMult": 1.2,
+    "BassXover": 600.0,
+    "HighShelf": -3.0,
+    "HighFreq": 6000.0,
+    "ColorMode": "1980s",
+    "ReverbMode": "Chamber1979"
+  }
+}

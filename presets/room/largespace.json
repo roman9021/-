@@ -1,0 +1,29 @@
+{
+  "effect": "room",
+  "title": "ValhallaRoom",
+  "name": "ValhallaRoom - Large Space",
+  "settings": {
+    "Mix": 50.0,
+    "PreDelay": 10.0,
+    "Decay": 2.0,
+    "HighCut": 8000.0,
+    "Depth": 50.0,
+    "EarlySize": 40.0,
+    "EarlyCross": 20.0,
+    "EarlyModRate": 1.0,
+    "EarlyModDepth": 20.0,
+    "EarlySend": 30.0,
+    "LateSize": 50.0,
+    "LateCross": 20.0,
+    "LateModRate": 0.7,
+    "LateModDepth": 40.0,
+    "Diffusion": 80.0,
+    "Spin": 0.6,
+    "Wander": 20.0,
+    "BassMult": 1.0,
+    "BassXover": 500.0,
+    "HighMult": 0.6,
+    "HighXover": 5000.0,
+    "Type": "Large Space"
+  }
+}

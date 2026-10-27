@@ -1,0 +1,21 @@
+{
+  "effect": "ubermod",
+  "title": "ValhallaUberMod",
+  "name": "ValhallaUberMod - Dark Tape",
+  "settings": {
+    "Mix": 50.0,
+    "Delay": 300.0,
+    "Taps": 4.0,
+    "Warp": 0.0,
+    "Feedback": 30.0,
+    "Density": 30.0,
+    "Width": 100.0,
+    "ModRate": 0.6,
+    "ModDepth": 30.0,
+    "LowCut": 60.0,
+    "HighCut": 9000.0,
+    "Drive": 0.0,
+    "Age": 0.0,
+    "Mode": "Dark Tape"
+  }
+}

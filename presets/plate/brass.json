@@ -1,0 +1,19 @@
+{
+  "effect": "plate",
+  "title": "ValhallaPlate",
+  "name": "ValhallaPlate - Brass",
+  "settings": {
+    "Mix": 50.0,
+    "PreDelay": 0.0,
+    "Decay": 2.5,
+    "Size": 50.0,
+    "Width": 100.0,
+    "ModRate": 0.8,
+    "ModDepth": 30.0,
+    "LowCut": 20.0,
+    "HighCut": 9000.0,
+    "BassMult": 1.0,
+    "BassXover": 400.0,
+    "Mode": "Brass"
+  }
+}

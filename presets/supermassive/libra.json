@@ -1,0 +1,18 @@
+{
+  "effect": "supermassive",
+  "title": "Valhalla Supermassive",
+  "name": "Valhalla Supermassive - Libra",
+  "settings": {
+    "Mix": 50.0,
+    "Delay": 250.0,
+    "Warp": 50.0,
+    "Feedback": 60.0,
+    "Density": 50.0,
+    "Width": 100.0,
+    "LowCut": 20.0,
+    "HighCut": 10000.0,
+    "ModRate": 0.4,
+    "ModDepth": 30.0,
+    "Mode": "Libra"
+  }
+}
