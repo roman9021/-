@@ -1,0 +1,10 @@
+VC Pack - VST3 for FL Studio (Windows, 64-bit)
+
+1. Copy every "VC ... .vst3" folder from this archive into
+   C:\Program Files\Common Files\VST3
+2. In FL Studio: Options > Manage plugins > Find installed plugins (Start scan).
+3. The effects appear under "VC Audio":
+   VC VintageVerb, VC Room, VC Plate, VC Shimmer, VC Supermassive,
+   VC Delay, VC Freq Echo, VC Space Mod, VC UberMod.
+
+Every parameter, including the Mode selector, is automatable in FL Studio.

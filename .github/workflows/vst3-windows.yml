@@ -1,0 +1,54 @@
+name: Build VST3 (Windows)
+
+on:
+  push:
+    paths:
+      - "plugin/**"
+      - ".github/workflows/vst3-windows.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -S plugin -B build -G "Visual Studio 17 2022" -A x64
+
+      - name: Build
+        run: cmake --build build --config Release --parallel
+
+      - name: Self-test DSP
+        run: build\Release\vc_selftest.exe
+
+      - name: Collect plug-ins
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force dist | Out-Null
+          Get-ChildItem build -Recurse -Directory -Filter *.vst3 |
+            Where-Object { $_.FullName -match '\\Release\\VST3\\' } |
+            ForEach-Object { Copy-Item $_.FullName -Destination dist -Recurse }
+          Copy-Item plugin\INSTALL.txt dist\
+          Get-ChildItem dist -Recurse -Filter *.vst3 -File | Select-Object FullName, Length
+          Compress-Archive -Path dist\* -DestinationPath VC-Pack-VST3-Windows-x64.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: VC-Pack-VST3-Windows-x64
+          path: dist
+
+      - name: Publish download
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: vst3-latest
+          name: VC Pack VST3 (Windows x64)
+          prerelease: true
+          files: VC-Pack-VST3-Windows-x64.zip
+          body: |
+            Nine VST3 effects for FL Studio and other Windows DAWs (64-bit).
+            Unzip and copy the .vst3 folders to C:\Program Files\Common Files\VST3,
+            then run Options > Manage plugins > Find plugins in FL Studio.
